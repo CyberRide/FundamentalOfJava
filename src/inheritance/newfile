@@ -1,0 +1,49 @@
+
+METHOD CALL
+TO CALL A METHOD IN JAVA, WRITE THE METHOD'S NAME FOLLOWED BY TWO PARENTHESES () 
+AND A SEMICOLON; THE PROCESS OF METHOD CALLING IS SIMPLE. 
+WHEN A PROGRAM INVOKES A METHOD, THE PROGRAM CONTROL GETS TRANSFERRED TO THE CALLED METHOD. 
+YOU HAVE CALLED ME.
+
+
+
+
+Binding
+Binding is the linking between method definition and call
+
+Static binding
+It takes place before the program is executed
+Also called early binding
+Binding is resolved at compile time by compiler
+It uses object type info for binding
+It uses type information for binding
+Eg  method overloading
+
+
+
+private,  final and static members (methods and variables) use static binding while for virtual methods (In Java methods are virtual by default) binding is done during run time based upon run time object.
+Static binding uses Type information for binding
+Overloaded methods are resolved (deciding which method to be called when there are multiple methods with same name) using static binding while overridden methods using dynamic binding, i.e, at run time.
+    
+
+
+public class Test{
+    void area(float r)
+    {
+        float a;
+        a=3.1416f*r
+        System.out.println("Area of circle:" +a);
+    }
+    void area (float l, float b)
+    {
+        float a;
+        a=l*b;
+        System.out.println("Area of Rectangle:" +a;)
+    }
+    public static void main (String[] args)
+    {
+        Test= new Test();
+        t.area(9.5f,7.8f);
+        t.area(3.4f);
+    }
+}+
